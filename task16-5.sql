@@ -1,0 +1,21 @@
+INSERT INTO POSTS(USER_ID, BODY)
+VALUES (3, "merry christmas");
+
+INSERT INTO POSTS(USER_ID, BODY)
+VALUES (5, "merry easter");
+
+INSERT INTO POSTS(USER_ID, BODY)
+VALUES (1, "happy easter");
+
+COMMIT;
+
+UPDATE POSTS
+SET BODY = "to delete"
+WHERE ID > 6;
+
+COMMIT;
+
+DELETE FROM POSTS
+WHERE BODY = "to delete";
+
+COMMIT;
